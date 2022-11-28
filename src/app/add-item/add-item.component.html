@@ -9,45 +9,45 @@
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="labe-control">Product Image</label>
-                    <input type="file" name="" id="" class="form-control">
+                    <input name="image" [(ngModel)]="image" type="file" name="" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Title</label>
-                    <input type="text" class="form-control">
+                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Description</label>
-                    <input type="text" class="form-control">
+                    <input name="description" [(ngModel)]="description" type="text" class="form-control">
 
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Rate</label>
-                    <input type="text" class="form-control">
+                    <input name="price" [(ngModel)]="price" type="text" class="form-control">
 
 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Seller name</label>
-                    <input type="text" class="form-control">
+                    <input name="SellerName" [(ngModel)]="SellerName" type="text" class="form-control">
 
                 
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
 
                     <label for="" class="labe-control">Quanitiy</label>
-                    <input type="text" class="form-control">
+                    <input name="Quanitiy" [(ngModel)]="Quanitiy" type="text" class="form-control">
 
                 
                 </div>
 
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6 pt-4">
-                    <button class="btn btn-primary">Submit</button>
+                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
                 </div>
 
 
